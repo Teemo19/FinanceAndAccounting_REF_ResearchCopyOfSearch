@@ -6,7 +6,7 @@
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1082,1820</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>536,1820</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>System1_UpdateWorkltem_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -118,7 +118,7 @@
         <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Browser Edge: ACME System 1 - Work Items" sap:VirtualizedContainerService.HintSize="484,1587" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" OpenMode="Never" ScopeGuid="2cfcf8f1-be1c-411d-a5ab-ecf23eed12f3" Version="V2">
+    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Browser Edge: ACME System 1 - Work Items" sap:VirtualizedContainerService.HintSize="484,1587" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="Simulate" OpenMode="Never" ScopeGuid="2cfcf8f1-be1c-411d-a5ab-ecf23eed12f3" Version="V2" WindowResize="Maximize">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
@@ -135,7 +135,7 @@
             </sap:WorkflowViewStateService.ViewState>
             <uix:NGetUrl CurrentUrl="[URL]" DisplayName="Get URL" sap:VirtualizedContainerService.HintSize="388,87" sap2010:WorkflowViewState.IdRef="NGetUrl_1" Version="V3" />
             <uix:NGoToUrl DisplayName="Go To URL" sap:VirtualizedContainerService.HintSize="388,82" sap2010:WorkflowViewState.IdRef="NGoToUrl_1" Url="[URL.Replace(&quot;work-items/&quot;,&quot;work-items/update/&quot;)]" Version="V3" />
-            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into Comments" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="388,218" sap2010:WorkflowViewState.IdRef="NTypeInto_2" ScopeIdentifier="2cfcf8f1-be1c-411d-a5ab-ecf23eed12f3" Text="[in_Comment]" Version="V3">
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="None" DisplayName="Type Into Comments" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="388,218" sap2010:WorkflowViewState.IdRef="NTypeInto_2" ScopeIdentifier="2cfcf8f1-be1c-411d-a5ab-ecf23eed12f3" Text="[in_Comment]" Version="V3">
               <uix:NTypeInto.Target>
                 <uix:TargetAnchorable BrowserURL="https://acme-test.uipath.com/work-items/update/93733380" DesignTimeRectangle="294, 463, 1348, 67" DesignTimeScaleFactor="1.25" ElementType="InputBox" FriendlyName="'TEXTAREA newComment'" FullSelectorArgument="&lt;webctrl id='newComment' tag='TEXTAREA' /&gt;" FuzzySelectorArgument="&lt;webctrl id='newComment' tag='TEXTAREA' type='text' class='form-control' aaname='*' /&gt;" Guid="b868fce3-7583-4f1a-ac85-470fe67ef602" ImageBase64="iVBORw0KGgoAAAANSUhEUgAABUgAAABHCAYAAADV7K3QAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAANxSURBVHhe7dxBTiJRAEXRXq2rlaGGOQNHwECNiuLvPEJV0G4WULxzkjcoLDdw83/9GQAAAAAApQRSAAAAAKDWP4F0u92O9Xo9VqvVuL+/NzMzMzMzMzMzM1v00jrTPNM+f/sRSDebzXh4eBhPT09jt9uN/X5vZmZmZmZmZmZmtuildaZ5pn2mgV6aA2nqaV7IP7y+vo63t7fx/v4+Pj4+zMzMzMzMzMzMzBa5NM60zjTPtM800MuTpHMgzRHTVNS8fDwex/f3t5mZmZmZmZmZmdlN7Ovr69Q+00DTQidzIM09/Ofn51McBQAAAAC4NWmfLy8vpxY6mQNpPlaaI6epqQAAAAAAtybt83A4nFro5Ecg/fz8PD8BAAAAANyeNNCrgTT38AEAAAAAblUaqEAKAAAAAFQSSAEAAACAWgIpAAAAAFBLIAUAAAAAagmkAAAAAEAtgRQAAAAAqCWQAgAAAAC1BFIAAAAAoJZACgAAAADUEkgBAAAAgFoCKQAAAABQSyAFAAAAAGoJpAAAAABALYEUAAAAAKglkAIAAAAAtQRSAAAAAKCWQAoAAAAA1BJIAQAAAIBaAikAAAAAUEsgBQAAAABqCaQAAAAAQC2BFAAAAACoJZACAAAAALUEUgAAAACglkAKAAAAANQSSAEAAACAWgIpAAAAAFBLIAUAAAAAagmkAAAAAEAtgRQAAAAAqCWQAgAAAAC1BFIAAAAAoJZACgAAAADUEkgBAAAAgFoCKQAAAABQSyAFAAAAAGoJpAAAAABALYEUAAAAAKglkAIAAAAAtQRSAAAAAKCWQAoAAAAA1BJIAQAAAIBaAikAAAAAUEsgBQAAAABqCaQAAAAAQC2BFAAAAACoJZACAAAAALUEUgAAAACglkAKAAAAANQSSAEAAACAWgIpAAAAAFDp7u5OIAUAAAAA+iSOhkAKAAAAAFSZ4mgIpAAAAABAjcs4GlcD6Wq1GofD4fwEAAAAALBsv+NontNA00IncyBdr9dju92enwAAAAAAlut/cTTSQNNCJ3MgzR8eHx9dswcAAAAAFu1aHE37TAO9PCg6B9LYbDanF/b7/Tgej+dfAQAAAACWK61zt9ud2mca6KUfgTSmI6a5h5+PlZqZmZmZmZmZmZkteWmd1z4x+k8gBQAAAABoIZACAAAAAKXG+At6kEXbAMgJKAAAAABJRU5ErkJggg==" InformativeScreenshot="b9598dcc98eede7620c2f72b9609f248.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='msedge.exe' htmlwindowname='WI-Update' title='ACME System 1' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
                   <uix:TargetAnchorable.Anchors>

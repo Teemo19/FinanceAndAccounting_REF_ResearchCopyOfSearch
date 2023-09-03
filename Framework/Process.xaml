@@ -135,9 +135,15 @@
     </ui:InvokeWorkflowFile>
     <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Modulos\System1\System1_SearchClientSearch.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="523,113" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_5" UnSafe="False" WorkflowFileName="Modulos\System1\System1_SearchClientSearch.xaml">
       <ui:InvokeWorkflowFile.Arguments>
-        <InArgument x:TypeArguments="s:String[]" x:Key="in_CheckInformation">[CheckInformation]</InArgument>
-        <InArgument x:TypeArguments="x:String" x:Key="in_Date">[CheckInformation(1)]</InArgument>
-        <OutArgument x:TypeArguments="x:Boolean" x:Key="out_CheckFound">[CheckFound]</OutArgument>
+        <InArgument x:TypeArguments="s:String[]" x:Key="in_CheckInformation">
+          <VisualBasicValue x:TypeArguments="s:String[]" ExpressionText="CheckInformation" />
+        </InArgument>
+        <InArgument x:TypeArguments="x:String" x:Key="in_Date">
+          <VisualBasicValue x:TypeArguments="x:String" ExpressionText="CheckInformation(1)" />
+        </InArgument>
+        <OutArgument x:TypeArguments="x:Boolean" x:Key="out_CheckFound">
+          <VisualBasicReference x:TypeArguments="x:Boolean" ExpressionText="CheckFound" />
+        </OutArgument>
       </ui:InvokeWorkflowFile.Arguments>
     </ui:InvokeWorkflowFile>
     <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Modulos\System1\System1_NavigateTo_Dashboard.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="523,113" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_6" UnSafe="False" WorkflowFileName="Modulos\System1\System1_NavigateTo_Dashboard.xaml">
@@ -176,8 +182,12 @@
                 </ui:InvokeWorkflowFile>
                 <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Modulos\System1\System1_UpdateWorkltem.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="388,113" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_10" UnSafe="False" WorkflowFileName="Modulos\System1\System1_UpdateWorkltem.xaml">
                   <ui:InvokeWorkflowFile.Arguments>
-                    <InArgument x:TypeArguments="x:String" x:Key="in_Comment">Check found in System 1</InArgument>
-                    <InArgument x:TypeArguments="x:String" x:Key="in_Status">Completed</InArgument>
+                    <InArgument x:TypeArguments="x:String" x:Key="in_Comment">
+                      <Literal x:TypeArguments="x:String">Check found in System 1</Literal>
+                    </InArgument>
+                    <InArgument x:TypeArguments="x:String" x:Key="in_Status">
+                      <Literal x:TypeArguments="x:String">Completed</Literal>
+                    </InArgument>
                   </ui:InvokeWorkflowFile.Arguments>
                 </ui:InvokeWorkflowFile>
                 <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Modulos\System1\System1_NavigateTo_Dashboard.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="388,113" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_24" UnSafe="False" WorkflowFileName="Modulos\System1\System1_NavigateTo_Dashboard.xaml">
@@ -199,6 +209,12 @@
                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
+                <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Modulos\System1\System1_NavigateTo_WIDetails.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="410,113" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_17" UnSafe="False" WorkflowFileName="Modulos\System1\System1_NavigateTo_WIDetails.xaml">
+                  <ui:InvokeWorkflowFile.Arguments>
+                    <InArgument x:TypeArguments="x:String" x:Key="in_System1URL">[in_Config("System1URL").ToString]</InArgument>
+                    <InArgument x:TypeArguments="x:String" x:Key="in_WIID">[in_TransactionItem("WIID").ToString]</InArgument>
+                  </ui:InvokeWorkflowFile.Arguments>
+                </ui:InvokeWorkflowFile>
                 <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Modulos\System3\System3_NavigateToSearchClientByID.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="410,113" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_12" UnSafe="False" WorkflowFileName="Modulos\System3\System3_NavigateToSearchClientByID.xaml">
                   <ui:InvokeWorkflowFile.Arguments>
                     <InArgument x:TypeArguments="x:String" x:Key="in_System3PATH">[in_Config("System3PATH").ToString]</InArgument>
@@ -216,20 +232,20 @@
                 </ui:InvokeWorkflowFile>
                 <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Modulos\System3\System3_ClientCheck.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="410,113" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_16" UnSafe="False" WorkflowFileName="Modulos\System3\System3_ClientCheck.xaml">
                   <ui:InvokeWorkflowFile.Arguments>
-                    <InArgument x:TypeArguments="x:String" x:Key="in_CheckNumber">[CheckInformation(0)]</InArgument>
-                    <InArgument x:TypeArguments="x:String" x:Key="in_CheckDate">[CheckInformation(1)]</InArgument>
-                    <OutArgument x:TypeArguments="x:Boolean" x:Key="out_CheckIsFound">[checkSystem3]</OutArgument>
+                    <InArgument x:TypeArguments="x:String" x:Key="in_CheckNumber">
+                      <VisualBasicValue x:TypeArguments="x:String" ExpressionText="CheckInformation(0)" />
+                    </InArgument>
+                    <InArgument x:TypeArguments="x:String" x:Key="in_CheckDate">
+                      <VisualBasicValue x:TypeArguments="x:String" ExpressionText="CheckInformation(1)" />
+                    </InArgument>
+                    <OutArgument x:TypeArguments="x:Boolean" x:Key="out_CheckIsFound">
+                      <VisualBasicReference x:TypeArguments="x:Boolean" ExpressionText="checkSystem3" />
+                    </OutArgument>
                   </ui:InvokeWorkflowFile.Arguments>
                 </ui:InvokeWorkflowFile>
                 <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Modulos\System3\System3_GoToDashboard.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="410,113" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_15" UnSafe="False" WorkflowFileName="Modulos\System3\System3_GoToDashboard.xaml">
                   <ui:InvokeWorkflowFile.Arguments>
                     <scg:Dictionary x:TypeArguments="x:String, Argument" />
-                  </ui:InvokeWorkflowFile.Arguments>
-                </ui:InvokeWorkflowFile>
-                <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Modulos\System1\System1_NavigateTo_WIDetails.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="410,113" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_17" UnSafe="False" WorkflowFileName="Modulos\System1\System1_NavigateTo_WIDetails.xaml">
-                  <ui:InvokeWorkflowFile.Arguments>
-                    <InArgument x:TypeArguments="x:String" x:Key="in_System1URL">[in_Config("System1URL").ToString]</InArgument>
-                    <InArgument x:TypeArguments="x:String" x:Key="in_WIID">[in_TransactionItem("WIID").ToString]</InArgument>
                   </ui:InvokeWorkflowFile.Arguments>
                 </ui:InvokeWorkflowFile>
                 <If Condition="[checkSystem3]" DisplayName="If Check Found in System3" sap:VirtualizedContainerService.HintSize="410,584" sap2010:WorkflowViewState.IdRef="If_1">
@@ -248,8 +264,12 @@
                       </sap:WorkflowViewStateService.ViewState>
                       <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Modulos\System1\System1_UpdateWorkltem.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="334,113" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_18" UnSafe="False" WorkflowFileName="Modulos\System1\System1_UpdateWorkltem.xaml">
                         <ui:InvokeWorkflowFile.Arguments>
-                          <InArgument x:TypeArguments="x:String" x:Key="in_Comment">Check found in System 3</InArgument>
-                          <InArgument x:TypeArguments="x:String" x:Key="in_Status">Completed</InArgument>
+                          <InArgument x:TypeArguments="x:String" x:Key="in_Comment">
+                            <Literal x:TypeArguments="x:String">Check found in System 3</Literal>
+                          </InArgument>
+                          <InArgument x:TypeArguments="x:String" x:Key="in_Status">
+                            <Literal x:TypeArguments="x:String">Completed</Literal>
+                          </InArgument>
                         </ui:InvokeWorkflowFile.Arguments>
                       </ui:InvokeWorkflowFile>
                     </Sequence>
@@ -263,8 +283,12 @@
                       </sap:WorkflowViewStateService.ViewState>
                       <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Modulos\System1\System1_UpdateWorkltem.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="334,113" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_20" UnSafe="False" WorkflowFileName="Modulos\System1\System1_UpdateWorkltem.xaml">
                         <ui:InvokeWorkflowFile.Arguments>
-                          <InArgument x:TypeArguments="x:String" x:Key="in_Comment">Check not found in System1 or System 3</InArgument>
-                          <InArgument x:TypeArguments="x:String" x:Key="in_Status">Rejected</InArgument>
+                          <InArgument x:TypeArguments="x:String" x:Key="in_Comment">
+                            <Literal x:TypeArguments="x:String">Check not found in System1 or System 3</Literal>
+                          </InArgument>
+                          <InArgument x:TypeArguments="x:String" x:Key="in_Status">
+                            <Literal x:TypeArguments="x:String">Rejected</Literal>
+                          </InArgument>
                         </ui:InvokeWorkflowFile.Arguments>
                       </ui:InvokeWorkflowFile>
                     </Sequence>
